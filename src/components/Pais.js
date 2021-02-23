@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+// TODO: Continuar en el 24:30
+
 const PaisStyled = styled.div`
   width: 264px;
   border: 1px solid gray;
