@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-// TODO: Continuar en el 24:30
 
 const PaisStyled = styled.div`
   width: 264px;
-  border: 1px solid gray;
   text-align:left;
   border-radius:5px;
+  overflow: hidden;
+  box-shadow: 0 0 8px 2px rgba(0,0,0,.3);
+  margin: 1em;
   img {
     width: 100%;
     height: 160px;
@@ -18,23 +19,23 @@ const PaisStyled = styled.div`
   }
   h2{
     margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 1rem;
     font-size:20px;
   }
   p{
-    border: 1px solid red;
-    margin: 5px 0 5px 0;
-    font-size:15px;
+    margin-bottom: .5rem;
+    font-size: .9em;
   }
 `;
 
-export default function Pais({ bandera, nombre, capital, poblacion, region }) {
+export default function Pais({ bandera, nombre, nativeName, capital, poblacion, region, bordes}) {
   return (
     <PaisStyled>
     
       <img src={bandera} alt="" />
       <div className="detalles">
         <h2>{nombre}</h2>
+        <p><strong>Nombre Nativo: </strong>{nativeName}</p>
         <p><strong>Capital: </strong>{capital}</p>
         <p><strong>Poblacion: </strong>{poblacion}</p>
         <p><strong>Region: </strong>{region}</p>

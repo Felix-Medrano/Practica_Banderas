@@ -1,3 +1,13 @@
+:root{
+  --negro:#111517;
+  --blanco: white;
+  --fondo: rgba(197, 197, 197, 0.199);
+}
+
+body{
+  color: #111517;
+}
+
 .App {
   text-align: center;
 }
