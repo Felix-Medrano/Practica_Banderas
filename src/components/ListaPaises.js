@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Pais from "./Pais";
 import { useSelector, useDispatch } from "react-redux";
@@ -25,8 +25,8 @@ const ListaPaises = () => {
           type: "SET_LISTA_PAISES",
           payload: lista,
         });
+        // sadsad
         // setListaPaises(data);
-        // prueba
       })
       .catch(() => {
         console.log("Falla");
