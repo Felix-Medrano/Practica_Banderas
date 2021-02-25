@@ -26,6 +26,7 @@ const ListaPaises = () => {
           payload: lista,
         });
         // setListaPaises(data);
+        // prueba
       })
       .catch(() => {
         console.log("Falla");
